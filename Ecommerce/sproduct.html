@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="Assests/logo.png" alt="Logo" />
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html" class="active" >Shop</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html" >Contact</a></li>
+              <li>
+                <a href="cart.html"> <i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <div class="cart">
+              <a href="cart.html"  ><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Side Navigation -->
+      <div class="side-nav" id="side-nav">
+        <div class="side-nav-content">
+          <a href="javascript:void(0)" class="close-btn" id="close-btn"
+            >&times;</a
+          >
+          <a href="index.html" ">Home</a>
+          <a href="shop.html"class="active">Shop</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="contact.html"  >Contact</a>
+          <!-- <a href="#"><i class="fas fa-shopping-cart"></i></a> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="product-detail-grid">
+          <!-- Product Images Section -->
+          <div class="product-images">
+            <img
+              src="Assests/feature products/f1.jpg"
+              alt="Product Image"
+              class="main-product-image"
+            />
+            <div class="product-thumbnails">
+              <img
+                src="Assests/feature products/f2.jpg"
+                alt="Product Thumbnail"
+                class="thumbnail"
+              />
+              <img
+                src="Assests/feature products/f3.jpg"
+                alt="Product Thumbnail"
+                class="thumbnail"
+              />
+              <img
+                src="Assests/feature products/f4.jpg"
+                alt="Product Thumbnail"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+          <!-- Product Information Section -->
+          <div class="product-info">
+            <h1>Product Name</h1>
+            <p class="price">$99.99</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+            <p class="product-description">
+              This is a detailed description of the product. It includes all the
+              features, benefits, and any other information that a potential
+              customer might find useful.
+            </p>
+            <div class="product-options">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+            <form action="add_to_cart.php?product_id=1" method="post">
+              <div class="product-options">
+                <label for="color">Color:</label>
+                <select name="color" id="color">
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+              <div class="product-options">
+                <label for="size">Size:</label>
+                <select name="size" id="size">
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                </select>
+              </div>
+              <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-text">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Stay updated with our latest news, products, and exclusive offers.
+          </p>
+        </div>
+        <div class="newsletter-form">
+          <form action="subscribe.php" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">signup</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Us Column -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="Assests/logo.png" alt="Logo" />
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>1234 Street Name, City, Country</p>
+            <p>Email: contact@ecommerce.com</p>
+            <p>Phone: +123 456 7890</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Us Column -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- My Account Column -->
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Order History</a></li>
+          </ul>
+        </div>
+
+        <!-- Install App Column -->
+        <div class="footer-column">
+          <h3>Install App</h3>
+          <p>From App Store or Google Play</p>
+          <div class="footer-app-links">
+            <a href="#"><img src="Assests/pay/app.jpg" alt="App Store" /></a>
+            <a href="#"><img src="Assests/pay/play.jpg" alt="Google Play" /></a>
+          </div>
+          <p>Secure Payment Gateways</p>
+          <img src="Assests/pay/pay.png" alt="Payment Methods" />
+        </div>
+      </div>
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        <p>
+          &copy; 2024 E-commerce Website. All Rights Reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        // JavaScript to change the main product image when a thumbnail is clicked
+        document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                const mainImage = document.querySelector('.main-product-image');
+                mainImage.src = this.src;
+            });
+        });
+    </script>
+  </body>
+</html>

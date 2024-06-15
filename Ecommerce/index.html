@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My E-Commerce Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Assests/logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+              <div class="cart">
+                  <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="side-nav">
+        <div class="side-nav-content">
+            <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <!-- <a href="#"><i class="fas fa-shopping-cart"></i></a> -->
+        </div>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Welcome to Our E-Commerce Store</h1>
+        <p>
+          Discover the best products at unbeatable prices. <br />
+          Shop now and enjoy amazing discounts!
+        </p>
+        <a href="shop.html" class="btn">Shop Now</a>
+      </div>
+      <div class="hero-right">
+        <img src="Assests/hero.png" alt="Hero Image" />
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature">
+      <h2>Features</h2>
+      <div class="feature-container">
+        <div class="feature-item">
+          <i class="fas fa-truck"></i>
+          <h3>Fast Shipping</h3>
+          <p>Get your products delivered at your doorstep quickly.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-lock"></i>
+          <h3>Secure Payments</h3>
+          <p>Shop with confidence using secure payment methods.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Customer Support</h3>
+          <p>
+            Get assistance anytime, anywhere with our dedicated support team.
+          </p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-tags"></i>
+          <h3>Exclusive Discounts</h3>
+          <p>Enjoy exclusive discounts and offers on our products.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-gift"></i>
+          <h3>Rewards Program</h3>
+          <p>Join our rewards program and earn points with every purchase.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Quality Assurance</h3>
+          <p>
+            Guaranteed quality products with our rigorous quality assurance
+            process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Product Section -->
+    <section class="featured-product">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Assests/feature products/f1.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=1" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <!-- Repeat for more products -->
+        <div class="product-card">
+          <img src="Assests/feature products/f2.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f3.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f4.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f5.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f6.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f7.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+
+        <div class="product-card">
+          <img src="Assests/feature products/f8.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <!-- Add more product cards here -->
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>Discover Our Latest Collection</h2>
+        <p>
+          Explore the newest trends and exclusive offers. Upgrade your wardrobe
+          with our stylish picks.
+        </p>
+        <a href="shop.html" class="cta-button">Explore Now</a>
+      </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+      <h2>New Arrivals</h2>
+      <p>Check out our latest products that just arrived in store.</p>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n1.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=1" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <!-- Repeat for 7 more products -->
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n2.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=2" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n3.jpg" alt="Product 3" />
+          <h3>Product 3</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=3" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n4.jpg" alt="Product 4" />
+          <h3>Product 4</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=4" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n5.jpg" alt="Product 5" />
+          <h3>Product 5</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=5" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n6.jpg" alt="Product 6" />
+          <h3>Product 6</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=6" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n7.jpg" alt="Product 7" />
+          <h3>Product 7</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=7" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+        <div class="product-card">
+          <img src="Assests/new Arrivals/n8.jpg" alt="Product 8" />
+          <h3>Product 8</h3>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <a href="add_to_cart.php?product_id=8" class="add-to-cart"
+            ><i class="fas fa-cart-plus"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Call to Action Banners -->
+    <section class="cta-banners">
+      <div class="cta-banner cta-banner-1">
+        <div class="cta-content">
+          <h2>Special Offer</h2>
+          <p>
+            Don't miss out on our special discounts available for a limited
+            time.
+          </p>
+          <a href="shop.html" class="cta-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="cta-banner cta-banner-2">
+        <div class="cta-content">
+          <h2>New Collection</h2>
+          <p>Explore our latest arrivals and stay ahead of the trends.</p>
+          <a href="shop.html" class="cta-button">Discover</a>
+        </div>
+      </div>
+      <div class="cta-banner cta-banner-3">
+        <div class="cta-content">
+          <h2>Seasonal Sale</h2>
+          <p>Enjoy up to 50% off on selected items during our seasonal sale.</p>
+          <a href="shop.html" class="cta-button">Save Now</a>
+        </div>
+      </div>
+      <div class="cta-banner cta-banner-4">
+        <div class="cta-content">
+          <h2>Exclusive Offers</h2>
+          <p>
+            Sign up to receive exclusive deals and early access to new products.
+          </p>
+          <a href="signup.html" class="cta-button">Join Now</a>
+        </div>
+      </div>
+      <div class="cta-banner cta-banner-5">
+        <div class="cta-content">
+          <h2>Gift Cards</h2>
+          <p>Give the gift of choice with our versatile gift cards.</p>
+          <a href="gift-cards.html" class="cta-button">Buy Gift Cards</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-text">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Stay updated with our latest news, products, and exclusive offers.
+          </p>
+        </div>
+        <div class="newsletter-form">
+          <form action="subscribe.php" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">signup</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contact Us Column -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="Assests/logo.png" alt="Logo" />
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>1234 Street Name, City, Country</p>
+            <p>Email: contact@ecommerce.com</p>
+            <p>Phone: +123 456 7890</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Us Column -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- My Account Column -->
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Order History</a></li>
+          </ul>
+        </div>
+
+        <!-- Install App Column -->
+        <div class="footer-column">
+          <h3>Install App</h3>
+          <p>From App Store or Google Play</p>
+          <div class="footer-app-links">
+            <a href="#"><img src="Assests/pay/app.jpg" alt="App Store" /></a>
+            <a href="#"><img src="Assests/pay/play.jpg" alt="Google Play" /></a>
+          </div>
+          <p>Secure Payment Gateways</p>
+          <img src="Assests/pay/pay.png" alt="Payment Methods" />
+        </div>
+      </div>
+      <!-- Copyright Section -->
+    <div class="footer-copyright">
+      <p>&copy; 2024 E-commerce Website. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
